@@ -71,14 +71,14 @@ def feistel(permutedText, subkey, s_box0, s_box1):
 def main():
 
     file_input = fileinput.input()
-    key = file_input[0]
+    key = file_input[1]
     key = key.replace('\n','')
     
     
-    Text = file_input[1]
+    Text = file_input[2]
     Text = Text.replace('\n','')
     
-    mode = file_input[2]
+    mode = file_input[0]
     mode = mode.replace('\n','')
     
     s_box0 = [[1,0,3,2],[3,2,1,0],[0,2,1,3],[3,1,3,2]]
